@@ -603,10 +603,10 @@ body {
   .hero-section { min-height: auto; padding: 20px 0 30px; }
   .hero-container { padding: 0 24px; }
   .hero-banner-card { grid-template-columns: 1fr; padding: 28px 24px 0; text-align: center; min-height: auto; }
-  .hero-content { padding: 20px 0 16px; order: 1; align-items: center; }
+  .hero-content { padding: 20px 0 16px; order: 1; align-items: center; transform: none; }
   .hero-chips-row { justify-content: center; }
-  .hero-image-wrapper { order: 2; }
-  .mentor-cutout-photo { height: 320px; max-width: 290px; margin: 0 auto; }
+  .hero-image-wrapper { order: 2; clip-path: none; filter: none; width: 100%; margin-left: 0; justify-content: center; overflow: hidden; }
+  .mentor-cutout-photo { width: 100%; max-width: 340px; height: 340px; object-fit: contain; object-position: bottom center; margin: 0 auto; display: block; }
   .hero-subtitle { margin-left: auto; margin-right: auto; }
   .hero-actions { justify-content: center; }
   .courses-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
@@ -667,12 +667,14 @@ body {
 
   .hero-section { padding: 12px 0 22px; min-height: auto; }
   .hero-banner-card { padding: 18px 16px 0; border-radius: 18px; min-height: auto; }
-  .hero-content { padding: 8px 0 14px; }
+  .hero-content { padding: 8px 0 14px; transform: none; }
   .hero-title { font-size: clamp(2.2rem, 7.2vw, 2.8rem); letter-spacing: -0.8px; margin-bottom: 10px; }
+  .line-top-text { font-size: clamp(1.6rem, 5vw, 2rem); }
   .hero-subtitle { font-size: 0.9rem; margin-bottom: 16px; }
   .hero-actions { flex-direction: column; width: 100%; gap: 10px; }
   .btn-pill { width: 100%; padding: 11px 18px; }
-  .mentor-cutout-photo { height: 270px; max-width: 250px; }
+  .hero-image-wrapper { clip-path: none; filter: none; width: 100%; margin-left: 0; justify-content: center; overflow: hidden; }
+  .mentor-cutout-photo { width: 100%; max-width: 320px; height: 320px; object-fit: contain; object-position: bottom center; margin: 0 auto; display: block; }
   .hero-stats-grid { grid-template-columns: 1fr; gap: 12px; }
   .stat-card { padding: 14px 16px; }
   .lead-banner { padding: 22px 18px; border-radius: 18px; flex-direction: column; }
