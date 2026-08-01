@@ -662,19 +662,19 @@ body {
   .lead-badges-row { justify-content: center; }
 
   .section-container, .header-container, .hero-container, .footer-container { padding: 0 16px; }
-  .hero-container { padding: 0 12px; }
+  .hero-container { padding: 0 8px; }
   .footer-bottom { padding: 24px 16px 0; flex-direction: column; gap: 14px; text-align: center; }
 
-  .hero-section { padding: 12px 0 22px; min-height: auto; }
-  .hero-banner-card { padding: 18px 16px 0; border-radius: 18px; min-height: auto; }
-  .hero-content { padding: 8px 0 14px; transform: none; }
-  .hero-title { font-size: clamp(2.2rem, 7.2vw, 2.8rem); letter-spacing: -0.8px; margin-bottom: 10px; }
-  .line-top-text { font-size: clamp(1.6rem, 5vw, 2rem); }
-  .hero-subtitle { font-size: 0.9rem; margin-bottom: 16px; }
-  .hero-actions { flex-direction: column; width: 100%; gap: 10px; }
-  .btn-pill { width: 100%; padding: 11px 18px; }
-  .hero-image-wrapper { clip-path: none; filter: none; width: 100%; margin-left: 0; justify-content: center; overflow: hidden; }
-  .mentor-cutout-photo { width: 100%; max-width: 320px; height: 320px; object-fit: contain; object-position: bottom center; margin: 0 auto; display: block; }
+  .hero-section { padding: 8px 0 20px; min-height: auto; }
+  .hero-banner-card { padding: 24px 18px 0; border-radius: 18px; min-height: auto; overflow: hidden; }
+  .hero-content { padding: 8px 0 18px; transform: none; }
+  .hero-title { font-size: clamp(2.3rem, 7.5vw, 3rem); letter-spacing: -0.8px; margin-bottom: 12px; }
+  .line-top-text { font-size: clamp(1.6rem, 5.2vw, 2.1rem); }
+  .hero-subtitle { font-size: 0.95rem; margin-bottom: 20px; }
+  .hero-actions { flex-direction: column; width: 100%; gap: 12px; }
+  .btn-pill { width: 100%; padding: 12px 20px; font-size: 0.98rem; }
+  .hero-image-wrapper { clip-path: none; filter: none; width: calc(100% + 36px); margin-left: -18px; margin-right: -18px; margin-bottom: 0; justify-content: center; overflow: hidden; display: flex; align-items: flex-end; height: 380px; }
+  .mentor-cutout-photo { width: 100%; max-width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; display: block; }
   .hero-stats-grid { grid-template-columns: 1fr; gap: 12px; }
   .stat-card { padding: 14px 16px; }
   .lead-banner { padding: 22px 18px; border-radius: 18px; flex-direction: column; }
