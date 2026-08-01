@@ -273,6 +273,8 @@ body {
   margin-left: -24px;
   padding-top: 0;
   overflow: hidden;
+  clip-path: polygon(0 0, 92% 0, 78% 100%, 0 100%);
+  filter: drop-shadow(4px 0 15px rgba(16, 185, 129, 0.5));
 }
 
 .mentor-cutout-photo {
@@ -287,56 +289,29 @@ body {
 
 .hero-content {
   z-index: 2;
-  padding: 0 0 64px 0;
+  padding: 0 0 48px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(-38px);
-}
-
-/* IDEA C STRATEGY CHIPS */
-.hero-chips-row {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-}
-
-.hero-chip {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(110, 231, 183, 0.3);
-  color: #D1FAE5;
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 5px 14px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.hero-chip:hover, .hero-chip.active {
-  background: var(--accent-primary);
-  color: #FFFFFF;
-  border-color: var(--accent-primary);
-  box-shadow: 0 4px 14px var(--btn-shadow);
+  transform: translateY(-24px);
 }
 
 .line-top-text {
   font-family: var(--body-font);
-  font-size: clamp(1.8rem, 2.8vw, 2.3rem);
+  font-size: clamp(2.1rem, 3.2vw, 2.7rem);
   font-weight: 500;
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.1;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .hero-title {
   font-family: var(--heading-font);
-  font-size: clamp(3rem, 5vw, 4.4rem);
+  font-size: clamp(3.4rem, 5.8vw, 5.1rem);
   font-weight: 900;
-  line-height: 1.05;
-  margin-bottom: 18px;
-  letter-spacing: -1.2px;
+  line-height: 1.04;
+  margin-bottom: 20px;
+  letter-spacing: -1.4px;
   color: #FFFFFF;
 }
 
@@ -347,17 +322,17 @@ body {
 }
 
 .hero-subtitle {
-  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+  font-size: clamp(1.15rem, 1.5vw, 1.35rem);
   color: #D1FAE5;
-  margin-bottom: 28px;
-  max-width: 540px;
+  margin-bottom: 30px;
+  max-width: 580px;
   line-height: 1.5;
   transition: opacity 0.3s ease;
 }
 
-.hero-actions { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
-.btn-primary-cta { background: var(--btn-primary-bg); color: #FFFFFF; box-shadow: 0 8px 24px var(--btn-shadow); }
-.btn-link-secondary { color: #D1FAE5; text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+.hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.btn-primary-cta { background: var(--btn-primary-bg); color: #FFFFFF; box-shadow: 0 8px 24px var(--btn-shadow); padding: 13px 28px; font-size: 1rem; }
+.btn-link-secondary { color: #D1FAE5; text-decoration: none; font-weight: 700; font-size: 1.02rem; }
 
 /* FLOATING WHATSAPP ICON */
 .hero-floating-wa {
