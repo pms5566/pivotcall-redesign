@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeMastery - Stock Market Mentorship & Trading Academy</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&family=Mulish:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-option-1">
+
+  <!-- TOP DESIGN OPTION SELECTOR BAR -->
+  <div class="option-bar" id="optionBar">
+    <div class="option-bar-container">
+      <span class="option-title">✨ Select & Preview Design Style:</span>
+      <div class="option-buttons">
+        <button class="opt-btn active" data-theme="theme-option-1" onclick="selectTheme('theme-option-1', this)">
+          <span class="dot opt-1-dot"></span>
+          Option 1: Midnight & Gold (Dark)
+        </button>
+        <button class="opt-btn" data-theme="theme-option-2" onclick="selectTheme('theme-option-2', this)">
+          <span class="dot opt-2-dot"></span>
+          Option 2: Cyber Emerald (Dark)
+        </button>
+        <button class="opt-btn" data-theme="theme-option-3" onclick="selectTheme('theme-option-3', this)">
+          <span class="dot opt-3-dot"></span>
+          Option 3: Sapphire Coral (Clean White)
+        </button>
+        <button class="opt-btn" data-theme="theme-option-4" onclick="selectTheme('theme-option-4', this)">
+          <span class="dot opt-4-dot"></span>
+          Option 4: Obsidian Violet (Dark)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN PAGE WRAPPER -->
+  <div class="page-wrapper">
+    
+    <!-- MAIN SITE HEADER -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="brand-logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3v18h18"></path>
+              <path d="M18 17V9"></path>
+              <path d="M13 17V5"></path>
+              <path d="M8 17v-3"></path>
+            </svg>
+          </div>
+          <span class="brand-name">TradeMastery.io</span>
+        </div>
+
+        <nav class="nav-menu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About me</a>
+          <a href="#courses" class="nav-link">Courses</a>
+          <a href="#books" class="nav-link">Books ▾</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <a href="#videos" class="nav-link">Videos</a>
+          <a href="#stories" class="nav-link">Success stories</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-cta">
+          <a href="#enroll" class="btn-pill btn-header">Get Started <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-container">
+        <div class="hero-banner-card">
+          
+          <!-- LEFT SIDE: MENTOR IMAGE & BACKDROP -->
+          <div class="hero-image-wrapper">
+            <div class="mentor-glow"></div>
+            <div class="mentor-image-frame">
+              <svg class="mentor-illustration" viewBox="0 0 400 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background Accent Circle -->
+                <circle cx="200" cy="240" r="170" fill="var(--hero-glow-color)" opacity="0.18"/>
+                <!-- Silhouette / Stylized Mentor Image Representation -->
+                <g class="mentor-svg-graphic">
+                  <!-- Torso & White Shirt -->
+                  <path d="M90 480C90 380 140 330 200 330C260 330 310 380 310 480H90Z" fill="#FFFFFF" opacity="0.95"/>
+                  <path d="M165 330L200 390L235 330H165Z" fill="#E2E8F0"/>
+                  <!-- Neck & Head -->
+                  <rect x="180" y="270" width="40" height="70" rx="8" fill="#E0A98B"/>
+                  <ellipse cx="200" cy="210" rx="65" ry="75" fill="#E0A98B"/>
+                  <!-- Beard & Hair -->
+                  <path d="M135 190C135 140 160 120 200 120C240 120 265 140 265 190C265 200 265 210 260 220C250 270 230 290 200 290C170 290 150 270 140 220C135 210 135 200 135 190Z" fill="#2D231E"/>
+                  <!-- Glasses -->
+                  <rect x="150" y="180" width="42" height="32" rx="8" fill="none" stroke="#1E1E1E" stroke-width="4"/>
+                  <rect x="208" y="180" width="42" height="32" rx="8" fill="none" stroke="#1E1E1E" stroke-width="4"/>
+                  <line x1="192" y1="196" x2="208" y2="196" stroke="#1E1E1E" stroke-width="4"/>
+                  <!-- Smile -->
+                  <path d="M180 245Q200 260 220 245" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE: HERO CONTENT -->
+          <div class="hero-content">
+            <span class="badge-tag">📈 20+ Years Market Experience</span>
+            <h1 class="hero-title">Learn the <br><span class="highlight-text">Art of Trading</span></h1>
+            <p class="hero-subtitle">
+              with masterclass courses crafted from <strong>20 years of proven stock market strategies</strong>.
+            </p>
+            <div class="hero-actions">
+              <a href="#enroll" class="btn-pill btn-primary-cta">
+                Enroll Now <span class="arrow">→</span>
+              </a>
+              <a href="#overview" class="btn-link-secondary">
+                View Curriculum <span>↓</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- STATS & FEATURES GRID BELOW HERO -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <h3 class="stat-number">50K+</h3>
+              <p class="stat-label">YouTube Subscribers</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <h3 class="stat-number">12,500+</h3>
+              <p class="stat-label">Trained Students</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <h3 class="stat-number">180+</h3>
+              <p class="stat-label">Live Webinars</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section class="courses-section" id="courses">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Featured Masterclasses</span>
+          <h2>Master the Market with Proven Strategies</h2>
+          <p>Step-by-step trading programs designed for consistent profitability.</p>
+        </div>
+
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-badge">Bestseller</div>
+            <h3>Mastering CPR & Price Action Trading</h3>
+            <p>Comprehensive guide to Central Pivot Range (CPR), support/resistance, and candlestick psychology.</p>
+            <div class="course-meta">
+              <span>⭐ 4.9 (2,400 reviews)</span>
+              <span>📚 18 Modules</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">₹14,999</span>
+              <a href="#" class="btn-course">Explore Course →</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-badge">Advanced</div>
+            <h3>Options Buying & Scalping Blueprint</h3>
+            <p>High-probability options strategies with strict risk-to-reward parameters for volatile markets.</p>
+            <div class="course-meta">
+              <span>⭐ 4.9 (1,850 reviews)</span>
+              <span>📚 14 Modules</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">₹19,999</span>
+              <a href="#" class="btn-course">Explore Course →</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-badge">Popular</div>
+            <h3>Swing Trading & Portfolio Building</h3>
+            <p>Identify multi-bagger breakout stocks for medium-term wealth accumulation.</p>
+            <div class="course-meta">
+              <span>⭐ 4.8 (1,120 reviews)</span>
+              <span>📚 12 Modules</span>
+            </div>
+            <div class="course-footer">
+              <span class="price">₹11,999</span>
+              <a href="#" class="btn-course">Explore Course →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/" class="whatsapp-float" target="_blank" aria-label="Contact on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.143 4.174 4.167-1.092z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>TradeMastery - Master SMC, Pivots, Dow Theory & Wave Analysis</title>
+  <meta name="description" content="Learn Smart Money Concepts (SMC) & Pivot strategies for Intraday trading, alongside Dow Theory & Elliott Wave analysis for long-term wealth building.">
+  
+  <!-- Google Fonts: Montserrat & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- CONTINUOUS LIVE MARKET MARQUEE TICKER -->
+  <div class="market-bias-ticker">
+    <div class="ticker-track">
+      <div class="ticker-item">
+        <span class="ticker-badge"><span class="pulse-dot"></span> LIVE BIAS</span>
+        <span class="ticker-text"><strong>Nifty 50:</strong> SMC Bullish Order Block Active @ 24,500</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge badge-cpr">⚡ CPR ALERT</span>
+        <span class="ticker-text"><strong>BankNifty:</strong> Narrow CPR Width (Expansion Expected)</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge badge-wave">📈 WAVE ANALYSIS</span>
+        <span class="ticker-text"><strong>Long Term:</strong> Wave 3 Impulse Extension Confirmed</span>
+      </div>
+      <a href="#courses" class="ticker-link">Explore Setup →</a>
+
+      <!-- DUPLICATE LOOP FOR CONTINUOUS MARQUEE -->
+      <div class="ticker-item">
+        <span class="ticker-badge"><span class="pulse-dot"></span> LIVE BIAS</span>
+        <span class="ticker-text"><strong>Nifty 50:</strong> SMC Bullish Order Block Active @ 24,500</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge badge-cpr">⚡ CPR ALERT</span>
+        <span class="ticker-text"><strong>BankNifty:</strong> Narrow CPR Width (Expansion Expected)</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-badge badge-wave">📈 WAVE ANALYSIS</span>
+        <span class="ticker-text"><strong>Long Term:</strong> Wave 3 Impulse Extension Confirmed</span>
+      </div>
+      <a href="#courses" class="ticker-link">Explore Setup →</a>
+    </div>
+  </div>
+
+  <!-- MAIN SITE HEADER -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-icon">
+          <!-- CONCEPT 4 INFINITY WEALTH LOOP LOGO -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.356-8-5.096 0-5.096 8 0 8-5.223 0 7.261-8 12.356-8z"></path>
+          </svg>
+        </div>
+        <span class="brand-name">TradeMastery.io</span>
+      </a>
+
+      <!-- DESKTOP NAVBAR MENU -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About me</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#books" class="nav-link">Books</a>
+        <a href="#stories" class="nav-link">Success Stories</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#courses" class="btn-pill btn-header">Get Started <span class="arrow">→</span></a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: IDEA C WITH CYBER EMERALD THEME -->
+  <section class="hero-section" id="home">
+    <div class="hero-container">
+      
+      <div class="hero-banner-card cyber-emerald-hero">
+        
+        <!-- LEFT SIDE: MENTOR CUTOUT PHOTO -->
+        <div class="hero-image-wrapper">
+          <img 
+            src="mentor_cutout.png" 
+            alt="Trading Mentor Cutout - TradeMastery" 
+            class="mentor-cutout-photo"
+          >
+        </div>
+
+        <!-- RIGHT SIDE: IDEA C STRATEGY CHIPS + CYBER EMERALD HEADING -->
+        <div class="hero-content">
+          
+
+
+          <div class="line-top-text">Learn the</div>
+          <h1 class="hero-title"><span class="highlight-text">Art of Trading</span></h1>
+          
+          <p class="hero-subtitle" id="heroSubtitleText">
+            with courses crafted from 20 years of stock market experience
+          </p>
+
+          <div class="hero-actions">
+            <a href="#courses" class="btn-pill btn-primary-cta">
+              Enroll Now <span class="arrow">→</span>
+            </a>
+            <a href="#about" class="btn-link-secondary">
+              Read My Journey <span>↓</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- FLOATING WHATSAPP ICON -->
+        <a href="https://wa.me/" class="hero-floating-wa" target="_blank" aria-label="Chat on WhatsApp">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.143 4.174 4.167-1.092z"/>
+          </svg>
+        </a>
+
+      </div>
+
+      <!-- SWIPEABLE STATS GRID -->
+      <div class="hero-stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <h3 class="stat-number">50K+</h3>
+            <p class="stat-label">YouTube Subscribers</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <h3 class="stat-number">12,500+</h3>
+            <p class="stat-label">Trained Students</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <h3 class="stat-number">180+</h3>
+            <p class="stat-label">Live Webinars Conducted</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT MENTOR SECTION -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-photo-wrapper">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Mentor at Work" class="about-photo">
+            <div class="experience-badge">
+              <h4>20+</h4>
+              <p>Years of Market Wisdom</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-content-col">
+          <span class="section-tag">Trading Methodology</span>
+          <h2>Intraday Precision & Long-Term Wealth Systems</h2>
+          <p class="lead-text">
+            "Combine institutional order flow for intraday trades with macro wave cycles for multi-generational wealth."
+          </p>
+          
+          <div class="about-text-content" id="aboutAccordion">
+            <p>
+              Over 20 years of active trading, I developed a dual-engine framework. For **Intraday Trading**, we utilize Smart Money Concepts (SMC - Order Blocks & Liquidity Sweeps) alongside Central Pivot Range (CPR).
+            </p>
+            <div class="accordion-hidden-text" id="accordionFullText">
+              <p>
+                For **Long-Term Growth**, we apply Dow Theory trend cycles and Elliott Wave impulses to capture 3x+ multi-bagger stock breakouts before retail awareness.
+              </p>
+            </div>
+            <button class="btn-accordion-toggle" onclick="toggleAboutStory()" id="aboutToggleBtn">
+              Read Full Story ↓
+            </button>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="check-icon">⚡</span>
+              <div>
+                <strong>Intraday: SMC & Pivot Call Strategies</strong>
+                <p>Track institutional liquidity pools, Fair Value Gaps (FVG), and CPR pivots.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="check-icon">📈</span>
+              <div>
+                <strong>Long Term: Dow Theory & Elliott Wave Analysis</strong>
+                <p>Identify major bull cycles, wave 3 impulse breakouts, and accumulation zones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES MASTERCLASSES SECTION -->
+  <section class="courses-section" id="courses">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Featured Core Curriculum</span>
+        <h2>Master Intraday & Long-Term Strategies</h2>
+        <p>From institutional SMC order flow to multi-year wave cycles, master the market end-to-end.</p>
+        
+        <div class="category-chips">
+          <button class="chip active" onclick="filterCategory('all', this)">All Masterclasses</button>
+          <button class="chip" onclick="filterCategory('smc', this)">⚡ SMC Intraday</button>
+          <button class="chip" onclick="filterCategory('cpr', this)">🎯 CPR Pivots</button>
+          <button class="chip" onclick="filterCategory('wave', this)">📈 Dow & Wave</button>
+        </div>
+      </div>
+
+      <div class="courses-grid">
+        <div class="course-card" data-category="smc">
+          <div class="course-image-box">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600&q=80" alt="SMC & Intraday Trading">
+            <span class="course-badge">Intraday Special</span>
+          </div>
+          <div class="course-body">
+            <h3>Smart Money Concepts (SMC) & Liquidity Sweeps</h3>
+            <p>Master institutional order blocks, Change of Character (CHOCH), FVG gaps, and high-RR intraday scalping.</p>
+            <div class="course-meta">
+              <span>⭐ 4.9 (2,400+ reviews)</span>
+              <span>📚 18 Modules</span>
+            </div>
+            <div class="course-footer">
+              <div class="price-box">
+                <span class="price">₹14,999</span>
+                <span class="original-price">₹24,999</span>
+              </div>
+              <a href="#courses" class="btn-pill btn-course">Enroll Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-category="cpr">
+          <div class="course-image-box">
+            <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&q=80" alt="Pivot Call Strategy">
+            <span class="course-badge">Intraday Core</span>
+          </div>
+          <div class="course-body">
+            <h3>CPR & Central Pivot Call Trading System</h3>
+            <p>Trade high-probability CPR narrow width breakouts, pivot bounce setups, and intraday risk-reward rules.</p>
+            <div class="course-meta">
+              <span>⭐ 4.9 (1,850+ reviews)</span>
+              <span>📚 14 Modules</span>
+            </div>
+            <div class="course-footer">
+              <div class="price-box">
+                <span class="price">₹19,999</span>
+                <span class="original-price">₹29,999</span>
+              </div>
+              <a href="#courses" class="btn-pill btn-course">Enroll Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-card" data-category="wave">
+          <div class="course-image-box">
+            <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=600&q=80" alt="Dow Theory & Wave Method">
+            <span class="course-badge">Long Term Wealth</span>
+          </div>
+          <div class="course-body">
+            <h3>Dow Theory & Elliott Wave Masterclass</h3>
+            <p>Identify primary bull trends, Wave 3 impulse extensions, and build multi-bagger long-term stock portfolios.</p>
+            <div class="course-meta">
+              <span>⭐ 4.8 (1,120+ reviews)</span>
+              <span>📚 16 Modules</span>
+            </div>
+            <div class="course-footer">
+              <div class="price-box">
+                <span class="price">₹11,999</span>
+                <span class="original-price">₹18,999</span>
+              </div>
+              <a href="#courses" class="btn-pill btn-course">Enroll Now →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENHANCED MOBILE FREE DOWNLOAD LEAD BANNER -->
+  <section class="lead-banner-section">
+    <div class="section-container">
+      <div class="lead-banner">
+        
+        <div class="lead-left-content">
+          <div class="pdf-cover-thumb">
+            <span class="pdf-icon">📄</span>
+            <span class="pdf-label">SMC PDF Cheat Sheet</span>
+          </div>
+          <div class="lead-text-box">
+            <div class="lead-badges-row">
+              <span class="badge-tag" style="background:rgba(255,255,255,0.2)">🎁 FREE DOWNLOAD</span>
+              <span class="social-proof-pill">🔥 1,420 Downloaded Today</span>
+            </div>
+            <h2>Get the Ultimate SMC & Pivot Trading Cheat Sheet PDF</h2>
+            <p>Learn 5 high-probability Order Block & CPR setups used by 12,500+ profitable traders.</p>
+          </div>
+        </div>
+
+        <div class="lead-actions-box">
+          <form class="lead-form" onsubmit="event.preventDefault(); alert('Success! Your SMC & Pivot PDF Guide has been sent to your email.');">
+            <input type="email" placeholder="Enter your email address..." required>
+            <button type="submit" class="btn-pill btn-primary-cta">Download PDF Free →</button>
+          </form>
+          <a href="https://wa.me/" class="btn-wa-quick" target="_blank">
+            <span>💬</span> Get PDF on WhatsApp Instantly →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ENHANCED BESTSELLING BOOKS SECTION -->
+  <section class="books-section" id="books">
+    <div class="section-container">
+      <div class="section-header text-left">
+        <span class="section-tag">Bestselling Publications</span>
+        <h2>Master Market Structure with Definitive Books</h2>
+        <p>Read the strategy guides that transformed thousands of retail traders into disciplined market professionals.</p>
+      </div>
+
+      <div class="books-grid-mobile">
+        
+        <!-- BOOK CARD 1 -->
+        <div class="book-card-item">
+          <div class="book-mockup-wrap">
+            <div class="book-cover-art">
+              <span class="book-bestseller-tag">#1 Bestseller</span>
+              <h3>SMC & Pivot<br>Trading Secrets</h3>
+              <p>By TradeMastery Founder</p>
+            </div>
+          </div>
+          <div class="book-item-info">
+            <div class="format-chips-row">
+              <span class="f-chip">📘 Paperback</span>
+              <span class="f-chip">📱 Kindle PDF</span>
+              <span class="f-chip">🎧 Audiobook</span>
+            </div>
+            <h3>Secrets of SMC & Central Pivot Calls</h3>
+            <p>Complete guide to institutional order blocks, liquidity sweeps, and CPR intraday setups.</p>
+            <div class="book-actions">
+              <a href="#books" class="btn-pill btn-primary-cta">Get Book Copy →</a>
+              <a href="#books" class="btn-sample-link" onclick="alert('Free sample chapter PDF downloading...');">Free Sample Chapter ↓</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOOK CARD 2 -->
+        <div class="book-card-item">
+          <div class="book-mockup-wrap">
+            <div class="book-cover-art wave-book-art">
+              <span class="book-bestseller-tag">Top Rated</span>
+              <h3>Dow Theory &<br>Elliott Wave Method</h3>
+              <p>By TradeMastery Founder</p>
+            </div>
+          </div>
+          <div class="book-item-info">
+            <div class="format-chips-row">
+              <span class="f-chip">📘 Paperback</span>
+              <span class="f-chip">📱 Kindle PDF</span>
+            </div>
+            <h3>Elliott Wave & Dow Trend Cycles</h3>
+            <p>Master multi-year primary bull trends, Wave 3 impulse extensions, and multibagger stock picks.</p>
+            <div class="book-actions">
+              <a href="#books" class="btn-pill btn-primary-cta">Get Book Copy →</a>
+              <a href="#books" class="btn-sample-link" onclick="alert('Free sample chapter PDF downloading...');">Free Sample Chapter ↓</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCCESS STORIES SECTION -->
+  <section class="stories-section" id="stories">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Student Success Stories</span>
+        <h2>Real Traders, Real Consistency</h2>
+        <p>Read how our students master SMC intraday sweeps and long-term Wave trends.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-quote">"Learning SMC Order Blocks combined with CPR pivots helped me eliminate bad trades. My intraday win rate jumped from 40% to 72%!"</p>
+          <div class="reviewer-info">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Student Reviewer" class="reviewer-avatar">
+            <div>
+              <strong>Rajesh Sharma</strong>
+              <span>Intraday SMC & Pivot Trader</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-quote">"The Dow Theory and Elliott Wave long-term module gave me confidence to catch 3x multibagger stocks during the major wave 3 impulse!"</p>
+          <div class="reviewer-info">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Student Reviewer" class="reviewer-avatar">
+            <div>
+              <strong>Priya Nair</strong>
+              <span>Swing Trader & Wave Investor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-quote">"The clarity in combining liquidity sweeps for intraday with Dow trend cycles for portfolio building is second to none."</p>
+          <div class="reviewer-info">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80" alt="Student Reviewer" class="reviewer-avatar">
+            <div>
+              <strong>Amit Verma</strong>
+              <span>Software Engineer & Active Trader</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERFECTLY OPTIMIZED DESKTOP & MOBILE FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-container">
+      
+      <!-- BRAND COL -->
+      <div class="footer-col brand-col">
+        <div class="brand-logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18.178 8c5.096 0 5.096 8 0 8-5.095 0-7.133-8-12.356-8-5.096 0-5.096 8 0 8-5.223 0 7.261-8 12.356-8z"></path>
+            </svg>
+          </div>
+          <span class="brand-name">TradeMastery.io</span>
+        </div>
+        <p class="footer-desc">
+          Empowering traders with 20+ years of stock market experience, SMC intraday sweeps, CPR pivots, and Elliott Wave long-term systems.
+        </p>
+        <div class="footer-trust-badge">
+          <span>🔒 SSL 256-Bit Encrypted</span>
+          <span>🛡️ Verified SEBI Educational Standards</span>
+        </div>
+      </div>
+
+      <!-- FOOTER COL 1 -->
+      <div class="footer-col footer-accordion">
+        <h4 class="footer-heading">Quick Links</h4>
+        <button class="accordion-footer-title" onclick="toggleFooterCol(this)">
+          <span>Quick Links</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <ul class="accordion-footer-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#books">Books</a></li>
+        </ul>
+      </div>
+
+      <!-- FOOTER COL 2 -->
+      <div class="footer-col footer-accordion">
+        <h4 class="footer-heading">Trading Strategies</h4>
+        <button class="accordion-footer-title" onclick="toggleFooterCol(this)">
+          <span>Trading Strategies</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <ul class="accordion-footer-list">
+          <li><a href="#courses">SMC Intraday</a></li>
+          <li><a href="#courses">CPR Pivot Strategy</a></li>
+          <li><a href="#courses">Dow Theory Trends</a></li>
+          <li><a href="#courses">Elliott Wave Method</a></li>
+        </ul>
+      </div>
+
+      <!-- FOOTER COL 3 -->
+      <div class="footer-col footer-accordion">
+        <h4 class="footer-heading">Contact Support</h4>
+        <button class="accordion-footer-title" onclick="toggleFooterCol(this)">
+          <span>Contact Support</span>
+          <span class="acc-icon">+</span>
+        </button>
+        <ul class="accordion-footer-list">
+          <li><a href="mailto:support@trademastery.io">📧 support@trademastery.io</a></li>
+          <li><a href="#contact">📍 Financial District, Level 14, Tower A</a></li>
+          <li><a href="https://wa.me/" target="_blank">💬 WhatsApp Priority Support</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 TradeMastery.io. All rights reserved. Stock trading involves market risk. Educational purpose only.</p>
+      <button class="btn-top-pill" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑ Back to Top</button>
+    </div>
+  </footer>
+
+  <!-- MOBILE E-COMMERCE NATIVE BOTTOM APP TAB BAR -->
+  <div class="mobile-app-bottom-bar">
+    <a href="#home" class="app-tab active">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+      <span>Home</span>
+    </a>
+    <a href="#courses" class="app-tab">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+      <span>Courses</span>
+    </a>
+    <a href="#about" class="app-tab">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"></circle><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path></svg>
+      <span>Mentor</span>
+    </a>
+    <a href="#stories" class="app-tab">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      <span>Reviews</span>
+    </a>
+    <a href="https://wa.me/" class="app-tab app-tab-cta">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.143 4.174 4.167-1.092z"/></svg>
+      <span>Chat</span>
+    </a>
+  </div>
+
+  <!-- MOBILE STICKY ENROLLMENT CTA BAR -->
+  <div class="mobile-sticky-enroll-bar" id="mobileStickyEnroll">
+    <div class="sticky-price-info">
+      <span class="sticky-price">₹14,999</span>
+      <span class="sticky-offer">50% OFF TODAY</span>
+    </div>
+    <a href="#courses" class="btn-pill btn-primary-cta sticky-btn">Enroll Now →</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

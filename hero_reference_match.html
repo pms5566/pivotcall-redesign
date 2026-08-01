@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exact Reference Hero Layout Match - TradeMastery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #04091A;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+      padding: 30px 20px;
+    }
+    .preview-title {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      color: #6EE7B7;
+      margin-bottom: 24px;
+    }
+
+    .hero-reference-card {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      background: #0B1536;
+      border-radius: 32px;
+      padding: 0 60px;
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      align-items: flex-end;
+      gap: 40px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(11, 21, 54, 0.4);
+      min-height: 480px;
+    }
+
+    .mentor-cutout-ref {
+      width: 100%;
+      max-width: 440px;
+      height: 460px;
+      object-fit: contain;
+      object-position: bottom center;
+      display: block;
+      filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.5));
+    }
+
+    .hero-content-ref {
+      padding: 60px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .line-top {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.95);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .line-main {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(3.2rem, 5.2vw, 4.6rem);
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1.05;
+      margin-bottom: 20px;
+      letter-spacing: -1.2px;
+    }
+
+    .line-sub {
+      font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+      color: #D1D5DB;
+      margin-bottom: 32px;
+      max-width: 520px;
+      line-height: 1.45;
+      font-weight: 400;
+    }
+
+    .btn-pill-white {
+      background: #FFFFFF;
+      color: #0B1536;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 12px 32px;
+      border-radius: 9999px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: max-content;
+      box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .btn-pill-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(255, 255, 255, 0.35);
+    }
+
+    /* FLOATING WHATSAPP ICON MATCHING REFERENCE */
+    .floating-wa-btn {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      width: 52px;
+      height: 52px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="preview-title">✨ Exact Reference Layout Match (Midnight Navy)</h1>
+
+  <div class="hero-reference-card">
+    
+    <!-- LEFT SIDE: MENTOR CUTOUT PHOTO -->
+    <div class="hero-img-wrap">
+      <img src="mentor_cutout.png" alt="Mentor Cutout" class="mentor-cutout-ref">
+    </div>
+
+    <!-- RIGHT SIDE: TEXT & BUTTON MATCHING REFERENCE IMAGE -->
+    <div class="hero-content-ref">
+      <div class="line-top">Learn the</div>
+      <h1 class="line-main">Art of Trading</h1>
+      <p class="line-sub">with courses crafted from 20 years of stock market experience</p>
+      
+      <a href="#" class="btn-pill-white">
+        Enroll Now <span>→</span>
+      </a>
+    </div>
+
+    <!-- FLOATING WHATSAPP WIDGET -->
+    <div class="floating-wa-btn">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.143 4.174 4.167-1.092z"/>
+      </svg>
+    </div>
+
+  </div>
+
+</body>
+</html>

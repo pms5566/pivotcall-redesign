@@ -1,0 +1,8 @@
+# Temporary files
+*.py
+opt*.jpg
+trader_*.jpg
+trader_*.png
+mentor_trader_*.png
+mentor_cutout_opt2.png
+raw_mentor.jpg
