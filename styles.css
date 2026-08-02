@@ -959,75 +959,23 @@ body {
     display: block; 
     margin: 0 auto; 
   }
-  /* OPTION 5: BLOOMBERG-STYLE LIVE COUNTER RIBBON FOR MOBILE */
   .hero-stats-grid { 
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 4px; 
-    padding: 12px 6px; 
-    margin: 16px 12px 20px 12px; 
+    flex-direction: column;
+    gap: 12px; 
+    padding: 0 16px; 
+    margin: 20px 0 24px 0; 
     position: relative; 
     z-index: 2; 
-    width: calc(100% - 24px);
-    background: linear-gradient(135deg, #022C22 0%, #064E3B 100%);
-    border-radius: 16px;
-    border: 1px solid rgba(110, 231, 183, 0.3);
-    box-shadow: 0 8px 24px rgba(2, 44, 34, 0.2);
+    width: 100%;
     box-sizing: border-box;
   }
-
   .stat-card { 
-    padding: 4px 4px; 
-    background: transparent; 
-    border-radius: 0; 
-    border: none;
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 2px;
-    flex: 1;
-    position: relative;
-    min-width: 0;
-  }
-
-  .stat-card:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 15%;
-    height: 70%;
-    width: 1px;
-    background: rgba(110, 231, 183, 0.25);
-  }
-
-  .stat-icon-box { 
-    display: none; 
-  }
-
-  .stat-number { 
-    font-family: var(--heading-font);
-    font-size: 1.1rem;
-    font-weight: 900;
-    color: #6EE7B7;
-    line-height: 1.1;
-    text-shadow: 0 0 10px rgba(110, 231, 183, 0.3);
-    white-space: nowrap;
-  }
-
-  .stat-label { 
-    font-size: 0.68rem; 
-    color: #D1FAE5;
-    font-weight: 700;
-    letter-spacing: 0.1px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
+    padding: 14px 16px; 
+    background: #FFFFFF; 
+    border-radius: 14px; 
+    border: 1px solid rgba(6, 78, 59, 0.12);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
   }
 
   .about-section { 
