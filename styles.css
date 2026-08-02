@@ -289,29 +289,29 @@ body {
 
 .hero-content {
   z-index: 2;
-  padding: 24px 0 24px 0;
+  padding: 0 0 48px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(14px);
+  transform: translateY(-24px);
 }
 
 .line-top-text {
   font-family: var(--body-font);
-  font-size: clamp(2.6rem, 3.8vw, 3.3rem);
+  font-size: clamp(2.3rem, 3.5vw, 3.0rem);
   font-weight: 500;
   color: rgba(255, 255, 255, 0.95);
   line-height: 1.1;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .hero-title {
   font-family: var(--heading-font);
-  font-size: clamp(3.9rem, 6.6vw, 5.8rem);
+  font-size: clamp(3.6rem, 6.2vw, 5.5rem);
   font-weight: 900;
-  line-height: 1.03;
-  margin-bottom: 22px;
-  letter-spacing: -1.6px;
+  line-height: 1.04;
+  margin-bottom: 20px;
+  letter-spacing: -1.4px;
   color: #FFFFFF;
 }
 
@@ -322,17 +322,17 @@ body {
 }
 
 .hero-subtitle {
-  font-size: clamp(1.3rem, 1.8vw, 1.6rem);
+  font-size: clamp(1.2rem, 1.6vw, 1.45rem);
   color: #D1FAE5;
-  margin-bottom: 34px;
-  max-width: 650px;
+  margin-bottom: 30px;
+  max-width: 620px;
   line-height: 1.5;
   transition: opacity 0.3s ease;
 }
 
 .hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-.btn-primary-cta { background: var(--btn-primary-bg); color: #FFFFFF; box-shadow: 0 8px 24px var(--btn-shadow); padding: 15px 34px; font-size: 1.1rem; font-weight: 800; }
-.btn-link-secondary { color: #D1FAE5; text-decoration: none; font-weight: 700; font-size: 1.08rem; }
+.btn-primary-cta { background: var(--btn-primary-bg); color: #FFFFFF; box-shadow: 0 8px 24px var(--btn-shadow); padding: 13px 28px; font-size: 1rem; }
+.btn-link-secondary { color: #D1FAE5; text-decoration: none; font-weight: 700; font-size: 1.02rem; }
 
 /* FLOATING WHATSAPP ICON */
 .hero-floating-wa {
@@ -687,21 +687,21 @@ body {
     align-items: center;
   }
   .hero-content { 
-    padding: 10px 0 14px 0; 
-    transform: none; 
+    padding: 24px 0 14px 0; 
+    transform: translateY(18px); 
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center;
     text-align: center;
     width: 100%;
-    margin: auto 0;
+    margin: 0 auto;
   }
-  .line-top-text { font-size: 2.0rem; font-weight: 700; color: #FFFFFF; margin-bottom: 6px; text-align: center; }
-  .hero-title { font-size: clamp(2.8rem, 10vw, 3.6rem); font-weight: 900; letter-spacing: -1.5px; margin-bottom: 14px; line-height: 1.02; text-align: center; max-width: 100%; word-break: break-word; }
-  .hero-subtitle { font-size: 1.25rem; color: #D1FAE5; margin-bottom: 24px; max-width: 360px; margin-left: auto; margin-right: auto; line-height: 1.45; text-align: center; font-weight: 600; }
+  .line-top-text { font-size: 2.15rem; font-weight: 700; color: #FFFFFF; margin-bottom: 6px; text-align: center; }
+  .hero-title { font-size: clamp(3.0rem, 11vw, 3.8rem); font-weight: 900; letter-spacing: -1.5px; margin-bottom: 16px; line-height: 1.02; text-align: center; max-width: 100%; word-break: break-word; }
+  .hero-subtitle { font-size: 1.3rem; color: #D1FAE5; margin-bottom: 24px; max-width: 360px; margin-left: auto; margin-right: auto; line-height: 1.45; text-align: center; font-weight: 600; }
   .hero-actions { justify-content: center; width: 100%; align-items: center; }
-  .btn-pill { width: auto; min-width: 200px; padding: 14px 36px; font-size: 1.18rem; font-weight: 900; }
+  .btn-pill { width: auto; min-width: 210px; padding: 15px 38px; font-size: 1.2rem; font-weight: 900; }
   .hero-image-wrapper { 
     clip-path: none; 
     filter: none; 
