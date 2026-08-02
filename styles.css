@@ -771,11 +771,31 @@ html, body {
     position: relative; 
     overflow: hidden;
   }
-  .about-photo { height: 320px; object-fit: cover; border-radius: 18px; width: 100%; display: block; }
+  .about-photo { 
+    height: 360px; 
+    object-fit: cover; 
+    object-position: top center; 
+    border-radius: 18px; 
+    width: 100%; 
+    display: block; 
+  }
+  .experience-badge {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(2, 44, 34, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(110, 231, 183, 0.3);
+  }
+  .experience-badge h4 { font-size: 1.25rem; margin: 0; }
+  .experience-badge p { font-size: 0.72rem; margin: 0; }
+  .ticker-bar { overflow: hidden; white-space: nowrap; font-size: 0.78rem; }
   .lead-banner { padding: 22px 18px; border-radius: 18px; flex-direction: column; }
   .lead-form { flex-direction: column; }
   .lead-form input { width: 100%; }
-  .about-photo { height: 280px; }
   .brand-name { font-size: 1.2rem; }
   .logo-icon { width: 36px; height: 36px; border-radius: 9px; }
   .logo-icon svg { width: 20px; height: 20px; }
