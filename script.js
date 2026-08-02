@@ -19,6 +19,41 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  /* LIVE ANIMATED HERO STAT COUNTER */
+  const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+  if (statNumbers.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-target'), 10);
+          const suffix = el.getAttribute('data-suffix') || '+';
+          let start = 0;
+          const duration = 1200;
+          const stepTime = 20;
+          const steps = duration / stepTime;
+          const increment = target / steps;
+
+          const timer = setInterval(() => {
+            start += increment;
+            if (start >= target) {
+              start = target;
+              clearInterval(timer);
+            }
+            if (target >= 10000 && suffix.includes('K')) {
+              el.innerText = Math.floor(start / 1000) + suffix;
+            } else {
+              el.innerText = Math.floor(start).toLocaleString() + suffix;
+            }
+          }, stepTime);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    statNumbers.forEach(num => observer.observe(num));
+  }
 });
 
 /* HERO STRATEGY CHIP SWITCHER HANDLER */
