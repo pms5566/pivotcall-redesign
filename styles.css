@@ -699,8 +699,9 @@ html, body {
 
   .hero-section { 
     padding: 0; 
-    height: auto; 
-    min-height: auto;
+    height: calc(100vh - 120px); 
+    height: calc(100dvh - 120px); 
+    min-height: calc(100dvh - 120px);
     display: flex; 
     flex-direction: column; 
     overflow: visible;
@@ -708,9 +709,8 @@ html, body {
   .hero-banner-card { 
     padding: 20px 16px 0; 
     border-radius: 0; 
-    min-height: calc(100vh - 180px);
-    min-height: calc(100dvh - 180px);
-    height: auto;
+    height: 100%;
+    min-height: 100%;
     overflow: hidden; 
     text-align: center;
     background: linear-gradient(180deg, #022C22 0%, #064E3B 100%);
@@ -762,31 +762,23 @@ html, body {
     margin: 0 auto; 
   }
   .hero-stats-grid { 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px; 
+    display: flex;
+    flex-direction: column;
+    gap: 14px; 
     padding: 0 16px; 
-    margin: 18px 0; 
+    margin: 28px 0 20px 0; 
     position: relative; 
     z-index: 2; 
     width: 100%;
     box-sizing: border-box;
   }
   .stat-card { 
-    padding: 10px 6px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 4px;
+    padding: 16px 18px; 
     background: #FFFFFF; 
-    border-radius: 12px; 
+    border-radius: 16px; 
     border: 1px solid rgba(6, 78, 59, 0.12);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   }
-  .stat-number { font-size: 1.05rem; font-weight: 900; color: var(--badge-emerald); line-height: 1.1; }
-  .stat-label { font-size: 0.65rem; font-weight: 700; color: var(--text-muted); line-height: 1.2; margin: 0; }
   .about-section { 
     padding: 40px 0 50px; 
     margin-top: 28px; 
