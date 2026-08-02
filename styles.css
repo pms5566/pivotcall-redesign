@@ -666,19 +666,19 @@ body {
   .footer-bottom { padding: 24px 16px 0; flex-direction: column; gap: 14px; text-align: center; }
 
   .hero-section { 
-    padding: 0; 
-    height: calc(100vh - 144px); 
-    height: calc(100dvh - 144px); 
-    min-height: calc(100dvh - 144px);
+    padding: 0 0 30px 0; 
+    height: auto; 
+    min-height: auto;
     display: flex; 
     flex-direction: column; 
-    overflow: hidden;
+    overflow: visible;
   }
   .hero-banner-card { 
-    padding: 20px 16px 0; 
+    padding: 24px 16px 0; 
     border-radius: 0; 
-    height: 100%;
-    min-height: 100%;
+    min-height: calc(100vh - 144px); 
+    min-height: calc(100dvh - 144px); 
+    height: auto;
     overflow: hidden; 
     text-align: center;
     background: linear-gradient(180deg, #022C22 0%, #064E3B 100%);
@@ -716,7 +716,7 @@ body {
     display: flex; 
     align-items: flex-end; 
     flex: 1 1 auto;
-    min-height: 200px; 
+    min-height: 220px; 
     height: 100%;
   }
   .mentor-cutout-photo { 
@@ -729,7 +729,7 @@ body {
     display: block; 
     margin: 0 auto; 
   }
-  .hero-stats-grid { grid-template-columns: 1fr; gap: 12px; padding: 0 16px; margin-top: 24px; }
+  .hero-stats-grid { grid-template-columns: 1fr; gap: 14px; padding: 0 16px; margin-top: 24px; position: relative; z-index: 5; }
   .stat-card { padding: 14px 16px; }
   .lead-banner { padding: 22px 18px; border-radius: 18px; flex-direction: column; }
   .lead-form { flex-direction: column; }
