@@ -661,21 +661,46 @@ body {
   .lead-left-content { flex-direction: column; text-align: center; }
   .lead-badges-row { justify-content: center; }
 
-  .section-container, .header-container, .hero-container, .footer-container { padding: 0 16px; }
-  .hero-container { padding: 0 8px; }
+  .section-container, .header-container, .footer-container { padding: 0 16px; }
+  .hero-container { padding: 0; }
   .footer-bottom { padding: 24px 16px 0; flex-direction: column; gap: 14px; text-align: center; }
 
-  .hero-section { padding: 8px 0 20px; min-height: auto; }
-  .hero-banner-card { padding: 24px 18px 0; border-radius: 18px; min-height: auto; overflow: hidden; }
-  .hero-content { padding: 8px 0 18px; transform: none; }
-  .hero-title { font-size: clamp(2.3rem, 7.5vw, 3rem); letter-spacing: -0.8px; margin-bottom: 12px; }
-  .line-top-text { font-size: clamp(1.6rem, 5.2vw, 2.1rem); }
-  .hero-subtitle { font-size: 0.95rem; margin-bottom: 20px; }
-  .hero-actions { flex-direction: column; width: 100%; gap: 12px; }
-  .btn-pill { width: 100%; padding: 12px 20px; font-size: 0.98rem; }
-  .hero-image-wrapper { clip-path: none; filter: none; width: calc(100% + 36px); margin-left: -18px; margin-right: -18px; margin-bottom: 0; justify-content: center; overflow: hidden; display: flex; align-items: flex-end; height: 380px; }
-  .mentor-cutout-photo { width: 100%; max-width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; display: block; }
-  .hero-stats-grid { grid-template-columns: 1fr; gap: 12px; }
+  .hero-section { padding: 0 0 20px 0; min-height: auto; }
+  .hero-banner-card { 
+    padding: 20px 16px 0; 
+    border-radius: 0; 
+    min-height: auto; 
+    overflow: hidden; 
+    text-align: center;
+    background: linear-gradient(180deg, #022C22 0%, #064E3B 100%);
+  }
+  .hero-content { padding: 0 0 12px 0; transform: none; align-items: center; }
+  .line-top-text { font-size: 1.3rem; font-weight: 400; color: rgba(255, 255, 255, 0.9); margin-bottom: 4px; }
+  .hero-title { font-size: 2.4rem; font-weight: 900; letter-spacing: -1px; margin-bottom: 8px; line-height: 1.05; }
+  .hero-subtitle { font-size: 0.9rem; color: #D1FAE5; margin-bottom: 14px; max-width: 320px; margin-left: auto; margin-right: auto; line-height: 1.35; }
+  .hero-actions { justify-content: center; width: 100%; }
+  .btn-pill { width: auto; min-width: 160px; padding: 10px 24px; font-size: 0.95rem; }
+  .hero-image-wrapper { 
+    clip-path: none; 
+    filter: none; 
+    width: 100%; 
+    margin: 0; 
+    justify-content: center; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: flex-end; 
+    height: 310px; 
+  }
+  .mentor-cutout-photo { 
+    width: 100%; 
+    max-width: 320px; 
+    height: 310px; 
+    object-fit: contain; 
+    object-position: bottom center; 
+    display: block; 
+    margin: 0 auto; 
+  }
+  .hero-stats-grid { grid-template-columns: 1fr; gap: 12px; padding: 0 16px; margin-top: 20px; }
   .stat-card { padding: 14px 16px; }
   .lead-banner { padding: 22px 18px; border-radius: 18px; flex-direction: column; }
   .lead-form { flex-direction: column; }
