@@ -93,6 +93,21 @@ body {
 /* ==========================================================================
    3. REUSABLE UTILITIES & BUTTONS
    ========================================================================== */
+.section-tag {
+  color: var(--accent-primary);
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.orange-accent {
+  color: var(--accent-primary);
+  text-shadow: 0 2px 10px rgba(255, 87, 34, 0.15);
+}
+
 .btn-pill {
   display: inline-flex;
   align-items: center;
