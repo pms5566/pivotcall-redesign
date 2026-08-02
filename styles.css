@@ -990,21 +990,22 @@ body {
   }
   .stat-number { 
     font-family: var(--heading-font);
-    font-size: 1.05rem;
-    font-weight: 800;
+    font-size: 1.22rem;
+    font-weight: 900;
     color: var(--text-main);
     line-height: 1.1;
     white-space: nowrap;
   }
   .stat-label { 
-    font-size: 0.65rem; 
+    font-size: 0.76rem; 
     color: var(--text-muted);
-    font-weight: 600;
+    font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
   }
+  .desktop-only-text { display: none; }
 
   .about-section { 
     padding: 40px 0 50px; 
